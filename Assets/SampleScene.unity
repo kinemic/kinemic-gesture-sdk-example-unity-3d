@@ -8086,6 +8086,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VideoPlayer: {fileID: 1369668595}
   NameLabel: {fileID: 880036434}
+  VideoSwipeR: {fileID: 32900000, guid: be69c33a8dc474a64bbc196da018f69c, type: 3}
+  VideoSwipeL: {fileID: 32900000, guid: e6459c2f2ba0f440a8ae2fc6fac3a1ba, type: 3}
+  VideoCheckMark: {fileID: 32900000, guid: 24e7b3c7a12584e3ba4bc14e9c34763f, type: 3}
+  VideoCrossMark: {fileID: 32900000, guid: 694f192128124440cbc14f4983d3dff6, type: 3}
 --- !u!1 &1978275264
 GameObject:
   m_ObjectHideFlags: 0
@@ -8503,6 +8507,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7316251172558317789, guid: ba7ca79f6cf244118b9e226d47f3a64e,
+        type: 3}
+      propertyPath: m_Name
+      value: Action Downwards
+      objectReference: {fileID: 0}
     - target: {fileID: 7316251172473867270, guid: ba7ca79f6cf244118b9e226d47f3a64e,
         type: 3}
       propertyPath: m_Name
@@ -8512,11 +8521,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: State
-      objectReference: {fileID: 0}
-    - target: {fileID: 7316251172558317789, guid: ba7ca79f6cf244118b9e226d47f3a64e,
-        type: 3}
-      propertyPath: m_Name
-      value: Action Downwards
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba7ca79f6cf244118b9e226d47f3a64e, type: 3}

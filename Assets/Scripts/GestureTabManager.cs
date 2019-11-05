@@ -6,6 +6,11 @@ public class GestureTabManager : MonoBehaviour
     public UnityEngine.Video.VideoPlayer VideoPlayer;
     public UnityEngine.UI.Text NameLabel;
 
+    public UnityEngine.Video.VideoClip VideoSwipeR;
+    public UnityEngine.Video.VideoClip VideoSwipeL;
+    public UnityEngine.Video.VideoClip VideoCheckMark;
+    public UnityEngine.Video.VideoClip VideoCrossMark;
+
     private Gesture _currentGesture;
 
     private int _currentIndex = 0;
@@ -21,19 +26,19 @@ public class GestureTabManager : MonoBehaviour
         {
             case Gesture.SWIPE_R:
                 if (NameLabel != null) NameLabel.text = "Swipe Right";
-                if (VideoPlayer != null) VideoPlayer.clip = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.Video.VideoClip>("Assets/Videos/Swipe R.mp4");
+                if (VideoPlayer != null) VideoPlayer.clip = VideoSwipeR;
                 break;
             case Gesture.SWIPE_L:
                 if (NameLabel != null) NameLabel.text = "Swipe Left";
-                if (VideoPlayer != null) VideoPlayer.clip = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.Video.VideoClip>("Assets/Videos/Swipe L.mp4");
+                if (VideoPlayer != null) VideoPlayer.clip = VideoSwipeL;
                 break;
             case Gesture.CHECK_MARK:
                 if (NameLabel != null) NameLabel.text = "Check Mark";
-                if (VideoPlayer != null) VideoPlayer.clip = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.Video.VideoClip>("Assets/Videos/Check Mark.mp4");
+                if (VideoPlayer != null) VideoPlayer.clip = VideoCheckMark;
                 break;
             case Gesture.CROSS_MARK:
                 if (NameLabel != null) NameLabel.text = "Cross Mark";
-                if (VideoPlayer != null) VideoPlayer.clip = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.Video.VideoClip>("Assets/Videos/X Mark.mp4");
+                if (VideoPlayer != null) VideoPlayer.clip = VideoCrossMark;
                 break;
         }
     }
